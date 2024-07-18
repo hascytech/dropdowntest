@@ -1,0 +1,46 @@
+<!-- header.html -->
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    /* CSS for responsive header */
+    body {
+      background-color: #F8F9FA;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #F8F9FA;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    @media (max-width: 767px) {
+      /* Styles for mobile */
+      .logo {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+  <!-- LOGO -->
+  <a href="https://example.com"> <!-- Replace "https://example.com" with your home page URL -->
+    <img src="{% static 'images/logo-placeholder.png' %}" alt="Logo" class="logo">
+  </a>
+</nav>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2QLKFS2EN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W2QLKFS2EN');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Who Will Win - We Predict Winners of Football Matches{% endblock %}</title>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <style>
+        /* Necessary CSS styles */
+        .body-text-container p,
+        .body-text-container h2,
+        .body-text-container ol,
+        .body-text-container ul,
+        .body-text-container li {
+            font-family: Verdana, sans-serif;
+        }
+
+        .body-text-container p,
+        .body-text-container li {
+            font-size: 1.125rem;
+            line-height: 1.78;
+            margin: 20px; /* Adding margin to the body to create space around the columns */
+        }
+
+        .body-text-container h2 {
+            font-size: 1.5rem; /* Example size, adjust as needed */
+            text-align: center;
+            margin: 20px 0; /* Example margin, adjust as needed */
+        }
+
+        .body-text-container ol {
+            margin: 20px; /* Adding margin to the body to create space around the columns */
+        }
+
+        body {
+            overflow-x: hidden; /* Prevent horizontal scroll bar */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1 1 50%;
+            padding: 20px; /* Adding padding to create space within each column */
+            box-sizing: border-box; /* Including padding in the width calculation */
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                flex-basis: 100%;
+            }
+            .left, .right {
+                margin: 0; /* Resetting the margin on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                {% block content %}
+                <!-- Main content goes here -->
+                {% endblock %}
+            </div>
+            <div class="col-md-4">
+                <!-- Advertisement Code Here -->
+                <div class="advertisement">
+                    <!-- Advertisement 1: Affiliate Code -->
+                    <script type="text/javascript">
+                        document.write("<iframe name='banner' src='https://affiliate.fastcomet.com/scripts/2wb9ym?a_aid=5a7c422569fca&amp;a_bid=a517dc12&amp;w=1&refx2s6d="+encodeURIComponent(encodeURIComponent(document.URL))+"' framespacing='0' frameborder='no' scrolling='no' width='300' height='250' allowtransparency='true'><a href='https://affiliate.fastcomet.com/scripts/2wb9ym?a_aid=5a7c422569fca&amp;a_bid=a517dc12' target='_top'>DS New Year New Project Sale 300x250</a></iframe>");
+                    </script>
+                    <noscript>
+                        <h2><a href="https://www.fastcomet.com/dedicated-server-hosting">DS New Year New Project Sale 300x250</a></h2>
+                    </noscript>
+                </div>
+                <div style="height: 20px;"></div> <!-- Padding between banners -->
+                <div class="advertisement">
+                    <!-- Advertisement 2: Image-based -->
+                    <div class="centered-image">
+                        <a href="https://www.mywebsite.com">
+                            <img src="{% static 'images/ad-2.png' %}" alt="Advertisement 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

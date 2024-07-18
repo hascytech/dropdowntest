@@ -1,0 +1,119 @@
+<!-- footer.html -->
+{% load static %}
+
+<footer class="footer">
+  <style>
+    .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-logo img {
+      width: 150px; /* Increase this value to make the logo larger */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px;
+    }
+
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+
+    .footer-menu {
+      margin-bottom: 20px;
+    }
+
+    .footer-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-menu li {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    .footer-menu li a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .footer-menu li a:hover,
+    .footer-menu li a:focus,
+    .footer-menu li a:active {
+      color: red;
+    }
+
+    .footer-social {
+      margin-bottom: 20px;
+    }
+
+    .footer-social ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-social li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .footer-social img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .footer-disclaimer {
+      font-size: 14px;
+    }
+
+    .footer-copyright {
+      font-size: 14px;
+    }
+  </style>
+
+  <div class="footer-logo">
+    <img src="{% static 'images/logo-footer.png' %}" alt="Logo">
+  </div>
+
+  <div class="footer-menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'privacy' %}">Privacy and Cookie Policy</a></li>
+      <li><a href="{% url 'terms' %}">Terms and Conditions</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-social">
+    <ul>
+      <li><a href="#"><img src="{% static 'images/facebook-icon.png' %}" alt="Facebook"></a></li>
+      <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}" alt="Twitter"></a></li>
+      <li><a href="#"><img src="{% static 'images/whatsapp-icon.png' %}" alt="Whatsapp"></a></li>
+      <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}" alt="Instagram"></a></li>
+    </ul>
+  </div>
+
+  <div class="footer-disclaimer">
+    <p><strong>Disclaimer: </strong>Our prediction of match winners is intended to inform and educate. We do not
+      endorse, encourage or promote betting or gambling. We shall not be held responsible for any losses or damages
+      incurred due to the use of any information we provide.</p>
+  </div>
+
+  <div class="footer-copyright">
+    &copy; <span id="currentYear"></span> All rights reserved.
+  </div>
+
+  <script>
+    // Script to set the current year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+</footer>

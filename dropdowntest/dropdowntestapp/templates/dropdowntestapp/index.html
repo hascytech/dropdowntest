@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Predict Football Match Results{% endblock %}
+
+{% block content %}
+    <div class="header" style="margin-bottom: 20px;">
+        <h2 style="text-align: center;">Which match result do you want us to predict for you?</h2>
+    </div>
+    <div class="body-text-container">
+        <div class="form-container">
+            <form method="POST" action="{% url 'index' %}">
+                {% csrf_token %}
+                <!-- League dropdown -->
+                <div class="form-group">
+                    {{ form.league.label_tag }}
+                    {{ form.league }}
+                </div>
+                <!-- Home Team dropdown -->
+                <div class="form-group">
+                    {{ form.home_team.label_tag }}
+                    {{ form.home_team }}
+                </div>
+
+                <!-- Away Team dropdown -->
+                <div class="form-group">
+                    {{ form.away_team.label_tag }}
+                    {{ form.away_team }}
+                </div>
+
+                <!-- Match Date -->
+                <div class="form-group">
+                    {{ form.match_date.label_tag }}
+                    {{ form.match_date }}
+                </div>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary">Who Will Win</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+                <div id="error_message" style="display: none;"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const clubs = {
+            'EPL': ['Manchester United', 'Liverpool', 'Chelsea', 'Arsenal'],
+            'LaLiga': ['Barcelona', 'Real Madrid', 'Atletico Madrid', 'Sevilla'],
+            'SerieA': ['Juventus', 'Inter Milan', 'AC Milan', 'Roma'],
+            // Add clubs for other leagues
+        };
+
+        function updateTeams() {
+            const leagueSelect = document.getElementById('id_league');
+            const homeTeamSelect = document.getElementById('id_home_team');
+            const awayTeamSelect = document.getElementById('id_away_team');
+
+            const selectedLeague = leagueSelect.value;
+
+            const teams = clubs[selectedLeague] || [];
+
+            homeTeamSelect.innerHTML = '<option value="">Select home team</option>';
+            awayTeamSelect.innerHTML = '<option value="">Select away team</option>';
+
+            teams.forEach(team => {
+                const homeOption = document.createElement('option');
+                homeOption.value = team;
+                homeOption.text = team;
+                homeTeamSelect.appendChild(homeOption);
+
+                const awayOption = document.createElement('option');
+                awayOption.value = team;
+                awayOption.text = team;
+                awayTeamSelect.appendChild(awayOption);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('id_league').addEventListener('change', updateTeams);
+        });
+    </script>
+{% endblock %}
