@@ -80,5 +80,16 @@
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('id_league').addEventListener('change', updateTeams);
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const resetButton = document.querySelector('button[type="reset"]');
+            resetButton.addEventListener('click', () => {
+                setTimeout(() => {
+                    document.getElementById('id_league').value = '';
+                    document.getElementById('id_home_team').innerHTML = '<option value="">Select home team</option>';
+                    document.getElementById('id_away_team').innerHTML = '<option value="">Select away team</option>';
+                }, 0); // Use a timeout to ensure this happens after the form reset
+            });
+        });
     </script>
 {% endblock %}
