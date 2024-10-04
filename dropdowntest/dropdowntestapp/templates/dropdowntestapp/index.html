@@ -9,7 +9,7 @@
     </div>
     <div class="body-text-container">
         <div class="form-container">
-            <form method="POST" action="{% url 'index' %}">
+            <form method="POST" action="{% url 'index' %}" id="prediction-form">
                 {% csrf_token %}
                 <!-- League dropdown -->
                 <div class="form-group">
@@ -39,19 +39,12 @@
                     <button type="submit" class="btn btn-primary">Who Will Win</button>
                     <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
-                <div id="error_message" style="display: none;"></div>
+                <div id="error_message" style="color: red; display: none;"></div>
             </form>
         </div>
     </div>
 
     <script>
-        const clubs = {
-            'EPL': ['Manchester United', 'Liverpool', 'Chelsea', 'Arsenal'],
-            'LaLiga': ['Barcelona', 'Real Madrid', 'Atletico Madrid', 'Sevilla'],
-            'SerieA': ['Juventus', 'Inter Milan', 'AC Milan', 'Roma'],
-            // Add clubs for other leagues
-        };
-
         function updateTeams() {
             const leagueSelect = document.getElementById('id_league');
             const homeTeamSelect = document.getElementById('id_home_team');
@@ -59,35 +52,63 @@
 
             const selectedLeague = leagueSelect.value;
 
-            const teams = clubs[selectedLeague] || [];
+            // Fetch clubs based on the selected league
+            fetch(`/get_clubs/?league=${selectedLeague}`)
+                .then(response => response.json())
+                .then(data => {
+                    const teams = data.clubs || [];
 
-            homeTeamSelect.innerHTML = '<option value="">Select home team</option>';
-            awayTeamSelect.innerHTML = '<option value="">Select away team</option>';
+                    homeTeamSelect.innerHTML = '<option value="">Select home team</option>';
+                    awayTeamSelect.innerHTML = '<option value="">Select away team</option>';
 
-            teams.forEach(team => {
-                const homeOption = document.createElement('option');
-                homeOption.value = team;
-                homeOption.text = team;
-                homeTeamSelect.appendChild(homeOption);
+                    teams.forEach(team => {
+                        const homeOption = document.createElement('option');
+                        homeOption.value = team;
+                        homeOption.text = team;
+                        homeTeamSelect.appendChild(homeOption);
 
-                const awayOption = document.createElement('option');
-                awayOption.value = team;
-                awayOption.text = team;
-                awayTeamSelect.appendChild(awayOption);
-            });
+                        const awayOption = document.createElement('option');
+                        awayOption.value = team;
+                        awayOption.text = team;
+                        awayTeamSelect.appendChild(awayOption);
+                    });
+                });
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('id_league').addEventListener('change', updateTeams);
-        });
 
-        document.addEventListener('DOMContentLoaded', () => {
+            // Set up the date picker
+            const dateInput = document.getElementById('id_match_date');
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+
+            // Add form submit event listener to validate team selection
+            const form = document.getElementById('prediction-form');
+            form.addEventListener('submit', (event) => {
+                const homeTeam = document.getElementById('id_home_team').value;
+                const awayTeam = document.getElementById('id_away_team').value;
+                const errorMessage = document.getElementById('error_message');
+
+                if (homeTeam === awayTeam && homeTeam !== "" && awayTeam !== "") {
+                    event.preventDefault();
+                    errorMessage.textContent = "Heads up! The same team cannot be selected as both Home Team and Away Team.";
+                    errorMessage.style.display = 'block';
+                } else {
+                    errorMessage.style.display = 'none';
+                    return true;
+                }
+            });
+
+            // Add event listener to reset button to clear error message
             const resetButton = document.querySelector('button[type="reset"]');
             resetButton.addEventListener('click', () => {
                 setTimeout(() => {
                     document.getElementById('id_league').value = '';
                     document.getElementById('id_home_team').innerHTML = '<option value="">Select home team</option>';
                     document.getElementById('id_away_team').innerHTML = '<option value="">Select away team</option>';
+                    document.getElementById('id_match_date').value = '';  // Reset the date picker
+                    document.getElementById('error_message').style.display = 'none';
                 }, 0); // Use a timeout to ensure this happens after the form reset
             });
         });

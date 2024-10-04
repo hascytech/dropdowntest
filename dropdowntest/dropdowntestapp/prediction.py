@@ -1,7 +1,7 @@
 import requests
 import numpy as np
 
-api_key = "p$6$zN&Rn$8zGn!5DxVGd"
+api_key = "68edaca6-04ed-4695-9216-a383dabb4964"
 num = 16
 minimum = 1
 maximum = 100
