@@ -5,7 +5,6 @@ from django.shortcuts import render
 from .forms import MatchPredictionForm
 from .prediction import predict_winner
 
-
 # from .prediction import predict_winner  # Import your prediction function
 
 
@@ -60,8 +59,8 @@ def result(request):
     away_team = request.session.get('away_team')
     match_date = request.session.get('match_date')
     prediction = predict_winner(home_team, away_team)
-    # final_result = predict_winner(home_team, away_team)
-    print(prediction)
+
+    # print(prediction)
 
     return render(request, 'dropdowntestapp/result.html', {
         'home_team_name': home_team,

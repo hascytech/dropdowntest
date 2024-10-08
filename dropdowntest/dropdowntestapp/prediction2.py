@@ -901,8 +901,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -940,8 +941,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -979,8 +981,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1015,8 +1018,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1075,10 +1079,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 2:
                     sum_H2 = R1C2 + R2C2 + R3C2 + R4C2
@@ -1192,8 +1196,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1231,8 +1236,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1270,8 +1276,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1306,8 +1313,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1366,10 +1374,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 3:
                     sum_H3 = R1C3 + R2C3 + R3C3 + R4C3
@@ -1483,8 +1491,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1522,8 +1531,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1561,8 +1571,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1597,8 +1608,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1657,10 +1669,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 4:
                     sum_H4 = R1C4 + R2C4 + R3C4 + R4C4
@@ -1774,8 +1786,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1813,8 +1826,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1852,8 +1866,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1888,8 +1903,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -1948,10 +1964,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 5:
                     sum_H5 = RR1CC1 + RR2CC1 + RR3CC1 + RR4CC1
@@ -2065,8 +2081,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2104,8 +2121,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2143,8 +2161,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2179,8 +2198,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2239,10 +2259,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 6:
                     sum_H6 = RR1CC2 + RR2CC2 + RR3CC2 + RR4CC2
@@ -2356,8 +2376,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2395,8 +2416,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2434,8 +2456,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2470,8 +2493,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2530,10 +2554,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 7:
                     sum_H7 = RR1CC3 + RR2CC3 + RR3CC3 + RR4CC3
@@ -2647,8 +2671,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2686,8 +2711,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2725,8 +2751,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2761,8 +2788,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2821,10 +2849,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 8:
                     sum_H8 = RR1CC4 + RR2CC4 + RR3CC4 + RR4CC4
@@ -2938,8 +2966,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -2977,8 +3006,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3016,8 +3046,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3052,8 +3083,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3112,10 +3144,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 9:
                     sum_H9 = H91 + H92 + H93 + H94
@@ -3229,8 +3261,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3268,8 +3301,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3307,8 +3341,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3343,8 +3378,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3403,10 +3439,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 10:
                     sum_H10 = H101 + H102 + H103 + H104
@@ -3520,8 +3556,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3559,8 +3596,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3598,8 +3636,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3634,8 +3673,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3694,10 +3734,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 11:
                     sum_H11 = H111 + H112 + H113 + H114
@@ -3811,8 +3851,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3850,8 +3891,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3889,8 +3931,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3925,8 +3968,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -3985,10 +4029,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 12:
                     sum_H12 = H121 + H122 + H123 + H124
@@ -4102,8 +4146,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4141,8 +4186,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4180,8 +4226,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4216,8 +4263,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4276,10 +4324,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 13:
                     sum_H13 = H131 + H132 + H133 + H134
@@ -4393,8 +4441,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4432,8 +4481,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4471,8 +4521,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4507,8 +4558,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4567,10 +4619,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 14:
                     sum_H14 = H141 + H142 + H143 + H144
@@ -4684,8 +4736,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4723,8 +4776,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4762,8 +4816,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4798,8 +4853,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -4858,10 +4914,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 15:
                     sum_H15 = H151 + H152 + H153 + H154
@@ -4975,8 +5031,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5014,8 +5071,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5053,8 +5111,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5089,8 +5148,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5149,10 +5209,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 elif sincere == 0:
                     sum_H16 = H161 + H162 + H163 + H164
@@ -5266,8 +5326,9 @@ def predict_winner(home_team_name, away_team_name):
 
                         print("result_method1:", result_method1)
 
-                        # Formula 2 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 2
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5305,8 +5366,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method2 = "It will be a draw"
                         print("result_method2:", result_method2)
 
-                        # Formula 3 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 3
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5344,8 +5406,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method3 = "It will be a draw"
                         print("result_method3:", result_method3)
 
-                        # Formula 4 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 6. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 4
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 6.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5380,8 +5443,9 @@ def predict_winner(home_team_name, away_team_name):
                             result_method4 = "It will be a draw"
                         print("result_method4:", result_method4)
 
-                        # Formula 5 Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as
-                        # classes 1 to 10. Binary numbers were converted to base 10 for ease of comparison
+                        # Formula 5
+                        # Compare figure in h1 (Home team) with h7 (Away team) using a standard defined as classes 1 to 10.
+                        # Binary numbers were converted to base 10 for ease of comparison
 
                         # Define the classes
                         classes = [
@@ -5440,10 +5504,10 @@ def predict_winner(home_team_name, away_team_name):
                         else:
                             final_result = "Sorry, we cannot determine the winner of this match"
 
-                        return final_result
+                        print(final_result)
 
                     else:
-                        return "Error processing ... please try again"
+                        print("Not Sincere...")
 
                 break
             else:
