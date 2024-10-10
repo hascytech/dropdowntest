@@ -7,6 +7,14 @@
     <div class="header" style="margin-bottom: 20px;">
         <h2 style="text-align: center;">Which match result do you want us to predict for you?</h2>
     </div>
+
+        <!-- Responsive Leaderboard banner placeholder (728x90) -->
+    <div class="centered-image" style="margin-bottom: 20px;">
+        <a href="https://www.mywebsite.com" target="_blank">
+            <img src="{% static 'images/ad-728.png' %}" alt="Advertisement 2" class="responsive-banner">
+        </a>
+    </div>
+
     <div class="body-text-container">
         <div class="form-container">
             <form method="POST" action="{% url 'index' %}" id="prediction-form">
@@ -35,7 +43,7 @@
                 </div>
 
                 <!-- Submit and Reset Buttons -->
-                <div class="button-container">
+                <div class="button-container" style="margin-top: 20px; padding-bottom: 20px;">
                     <button type="submit" class="btn btn-primary">Who Will Win</button>
                     <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>

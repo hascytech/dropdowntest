@@ -2,14 +2,6 @@
 {% load static %}
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2QLKFS2EN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-W2QLKFS2EN');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Who Will Win - We Predict Winners of Football Matches{% endblock %}</title>
@@ -36,36 +28,39 @@
         }
 
         .body-text-container h2 {
-            font-size: 1.5rem; /* Example size, adjust as needed */
+            font-size: 1.5rem;
             text-align: center;
-            margin: 20px 0; /* Example margin, adjust as needed */
+            margin: 20px 0;
         }
 
         .body-text-container ol {
-            margin: 20px; /* Adding margin to the body to create space around the columns */
+            margin: 20px;
         }
 
         body {
-            overflow-x: hidden; /* Prevent horizontal scroll bar */
+            overflow-x: hidden;
         }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
+        .advertisement {
+            margin-bottom: 20px; /* Add space between ads */
         }
 
-        .column {
-            flex: 1 1 50%;
-            padding: 20px; /* Adding padding to create space within each column */
-            box-sizing: border-box; /* Including padding in the width calculation */
+        /* Ensure the banner is responsive */
+        .responsive-banner {
+            max-width: 100%;
+            height: auto;
         }
 
-        @media screen and (max-width: 600px) {
-            .column {
-                flex-basis: 100%;
+        /* Add media queries for smaller screens */
+        @media (max-width: 768px) {
+            .responsive-banner {
+                width: 100%;
             }
-            .left, .right {
-                margin: 0; /* Resetting the margin on smaller screens */
+
+            .col-md-8,
+            .col-md-4 {
+                padding-left: 15px;
+                padding-right: 15px;
             }
         }
     </style>
@@ -74,28 +69,30 @@
     {% include 'header.html' %}
     <div class="container">
         <div class="row">
+            <!-- Main content column -->
             <div class="col-md-8">
                 {% block content %}
                 <!-- Main content goes here -->
                 {% endblock %}
             </div>
+
+            <!-- Advertisement column -->
             <div class="col-md-4">
-                <!-- Advertisement Code Here -->
-                <div class="advertisement">
-                    <!-- Advertisement 1: Affiliate Code -->
-                    <script type="text/javascript">
-                        document.write("<iframe name='banner' src='https://affiliate.fastcomet.com/scripts/2wb9ym?a_aid=5a7c422569fca&amp;a_bid=a517dc12&amp;w=1&refx2s6d="+encodeURIComponent(encodeURIComponent(document.URL))+"' framespacing='0' frameborder='no' scrolling='no' width='300' height='250' allowtransparency='true'><a href='https://affiliate.fastcomet.com/scripts/2wb9ym?a_aid=5a7c422569fca&amp;a_bid=a517dc12' target='_top'>DS New Year New Project Sale 300x250</a></iframe>");
-                    </script>
-                    <noscript>
-                        <h2><a href="https://www.fastcomet.com/dedicated-server-hosting">DS New Year New Project Sale 300x250</a></h2>
-                    </noscript>
-                </div>
-                <div style="height: 20px;"></div> <!-- Padding between banners -->
                 <div class="advertisement">
                     <!-- Advertisement 2: Image-based -->
                     <div class="centered-image">
                         <a href="https://www.mywebsite.com">
-                            <img src="{% static 'images/ad-2.png' %}" alt="Advertisement 2">
+                            <img src="{% static 'images/ad-2.png' %}" alt="Advertisement 2" class="responsive-banner">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="advertisement">
+                    <!-- Advertisement 2: Image-based -->
+                    <div class="centered-image">
+                        <a href="https://www.mywebsite.com">
+                            <img src="{% static 'images/ad-2.png' %}" alt="Advertisement 2" class="responsive-banner">
                         </a>
                     </div>
                 </div>
