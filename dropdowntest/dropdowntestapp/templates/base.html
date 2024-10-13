@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Who Will Win - We Predict Winners of Football Matches{% endblock %}</title>
     <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
     <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 
     <style>
-        /* Necessary CSS styles */
+        /* Typography Styles */
         .body-text-container p,
         .body-text-container h2,
         .body-text-container ol,
@@ -24,7 +25,7 @@
         .body-text-container li {
             font-size: 1.125rem;
             line-height: 1.78;
-            margin: 20px; /* Adding margin to the body to create space around the columns */
+            margin: 20px;
         }
 
         .body-text-container h2 {
@@ -41,32 +42,113 @@
             overflow-x: hidden;
         }
 
+        /* Advertisement Styles */
         .advertisement {
-            margin-bottom: 20px; /* Add space between ads */
+            margin-bottom: 20px;
         }
 
-        /* Ensure the banner is responsive */
         .responsive-banner {
             max-width: 100%;
             height: auto;
         }
 
-        /* Add media queries for smaller screens */
+        /* Form Styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .custom-select, .form-control {
+            width: 100%;
+            padding: 1px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Centering form elements */
+        .form-container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;    /* Center items horizontally */
+        }
+
+        .form-group {
+            width: 100%;            /* Ensure full width */
+            max-width: 400px;      /* Set a max width for the form groups */
+            margin-bottom: 15px;   /* Space between form groups */
+        }
+
+        .form-label {
+            font-weight: bold;
+            font-size: 1rem;
+            display: block;         /* Ensure labels are block elements */
+            margin-bottom: 5px;    /* Space between label and input */
+        }
+
+        .custom-select, .form-control {
+            width: 100%;            /* Ensure selects take the full width */
+            padding: 3px;         /* Padding for comfort */
+            font-size: 1rem;       /* Font size for readability */
+            border: 1px solid #ccc; /* Border styling */
+            border-radius: 4px;    /* Rounded corners */
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        /* Error message styling */
+        #error_message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Media Queries for responsiveness */
         @media (max-width: 768px) {
             .responsive-banner {
                 width: 100%;
             }
 
-            .col-md-8,
-            .col-md-4 {
+            .col-md-8, .col-md-4 {
                 padding-left: 15px;
                 padding-right: 15px;
             }
         }
+
     </style>
 </head>
 <body>
     {% include 'header.html' %}
+
     <div class="container">
         <div class="row">
             <!-- Main content column -->
@@ -87,7 +169,6 @@
                     </div>
                 </div>
 
-
                 <div class="advertisement">
                     <!-- Advertisement 2: Image-based -->
                     <div class="centered-image">
@@ -99,7 +180,9 @@
             </div>
         </div>
     </div>
+
     {% include 'footer.html' %}
+
     <!-- Bootstrap JS CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

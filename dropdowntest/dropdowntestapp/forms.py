@@ -17,10 +17,53 @@ class MatchPredictionForm(forms.Form):
         # Add clubs for other leagues
     }
 
-    league = forms.ChoiceField(choices=LEAGUES, label='League')
-    home_team = forms.ChoiceField(choices=[('', 'Select home team')], label='Home Team')
-    away_team = forms.ChoiceField(choices=[('', 'Select away team')], label='Away Team')
-    match_date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}), label='Match Date')
+    league = forms.ChoiceField(
+        choices=LEAGUES,
+        label='League',
+        widget=forms.Select(
+            attrs={
+                'class': 'form-control custom-select',  # Adds Bootstrap or custom CSS classes
+                'id': 'id_league',  # You can specify a custom ID if needed
+                'style': 'width: 100%;',  # Inline styles for better control
+            }
+        )
+    )
+
+    home_team = forms.ChoiceField(
+        choices=[('', 'Select home team')],
+        label='Home Team',
+        widget=forms.Select(
+            attrs={
+                'class': 'form-control custom-select',  # Custom class
+                'id': 'id_home_team',
+                'style': 'width: 100%;',  # Inline styling to control width
+            }
+        )
+    )
+
+    away_team = forms.ChoiceField(
+        choices=[('', 'Select away team')],
+        label='Away Team',
+        widget=forms.Select(
+            attrs={
+                'class': 'form-control custom-select',
+                'id': 'id_away_team',
+                'style': 'width: 100%;',
+            }
+        )
+    )
+
+    match_date = forms.DateField(
+        label='Match Date',
+        widget=forms.DateInput(
+            attrs={
+                'type': 'date',  # Ensures the input type is a date picker
+                'class': 'form-control datepicker',  # Adds a datepicker class (if needed for external JS)
+                'id': 'id_match_date',
+                'style': 'width: 100%;',  # Control width
+            }
+        )
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
