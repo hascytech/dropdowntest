@@ -7,13 +7,33 @@ class MatchPredictionForm(forms.Form):
         ('EPL', 'English Premier League'),
         ('LaLiga', 'La Liga'),
         ('SerieA', 'Serie A'),
+        ('Bundesliga', 'Bundesliga'),
+        ('Ligue1', 'Ligue 1'),
+        ('NPL', 'Nigeria Premier League'),
         # Add other leagues as needed
     ]
 
     CLUBS = {
-        'EPL': ['Manchester United', 'Liverpool', 'Chelsea', 'Arsenal'],
-        'LaLiga': ['Barcelona', 'Real Madrid', 'Atletico Madrid', 'Sevilla'],
-        'SerieA': ['Juventus', 'Inter Milan', 'AC Milan', 'Roma'],
+        'EPL': ['Arsenal', 'Aston Villa', 'Bournemouth', 'Brentford', 'Brighton & Hove Albion', 'Chelsea', 'Crystal \
+                Palace', 'Everton', 'Fulham', 'Ipswich Town', 'Leicester City', 'Liverpool', 'Manchester City',
+                'Manchester United', 'Newcastle United', 'Nottingham Forest', 'Southampton', 'Tottenham Hotspur',
+                'West Ham United', 'Wolverhampton Wanderers'],
+        'LaLiga': ['Alavés', 'Athletic Bilbao', 'Atlético Madrid', 'Barcelona', 'Celta Vigo', 'Espanyol', 'Getafe',
+                   'Girona', 'Las Palmas', 'Leganés', 'Mallorca', 'Osasuna', 'Rayo Vallecano', 'Real Betis',
+                   'Real Madrid', 'Real Sociedad', 'Sevilla', 'Valencia', 'Valladolid', 'Villarreal'],
+        'SerieA': ['AC Milan', 'Atalanta', 'Bologna', 'Cagliari', 'Como', 'Fiorentina', 'Hellas', 'Genoa', 'Inter',
+                   'Juventus', 'Lazio', 'Monza', 'Napoli', 'Parma', 'Roma', 'Torino', 'Udinese'],
+        'Bundesliga': ['FC Augsburg', 'Union Berlin', 'VfL Bochum', 'Werder Bremen', 'Borussia Dortmund',
+                       'Eintracht Frankfurt', 'SC Freiburg', '1. FC Heidenheim', 'TSG Hoffenheim', 'Holstein Kiel',
+                       'RB Leipzig', 'Bayer Leverkusen', 'Mainz 05', 'Borussia Mönchengladbach', 'Bayern Munich',
+                       'FC St. Pauli', 'VfB Stuttgart', 'VfL Wolfsburg', ],
+        'Ligue 1': ['Angers', 'Auxerre', 'Brest', 'Le Havre', 'Lens', 'Lille', 'Lyon', 'Marseille', 'Monaco',
+                    'Montpellier', 'Nantes', 'Nice', 'PSG', 'Reims', 'Rennes', 'Strasbourg', 'Saint-Étienne',
+                    'Toulouse', ],
+        'NPL': ['Abia Warriors', 'Akwa United', 'Bayelsa United', 'Bendel Insurance', 'El-Kanemi Warriors', 'Enugu \
+                Rangers', 'Eyimba', 'Heartland', 'Ikorodu City', 'Kano Pillars', 'Katsina United', 'Kwara United',
+                'Lobi Stars', 'Nasarawa United', 'Niger Tornadoes', 'Plateau United', 'Remo Stars', 'Rivers United',
+                'Shooting Starts', 'Sunshine Stars'],
         # Add clubs for other leagues
     }
 
