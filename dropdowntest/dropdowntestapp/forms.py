@@ -27,9 +27,9 @@ class MatchPredictionForm(forms.Form):
                        'Eintracht Frankfurt', 'SC Freiburg', '1. FC Heidenheim', 'TSG Hoffenheim', 'Holstein Kiel',
                        'RB Leipzig', 'Bayer Leverkusen', 'Mainz 05', 'Borussia Mönchengladbach', 'Bayern Munich',
                        'FC St. Pauli', 'VfB Stuttgart', 'VfL Wolfsburg', ],
-        'Ligue 1': ['Angers', 'Auxerre', 'Brest', 'Le Havre', 'Lens', 'Lille', 'Lyon', 'Marseille', 'Monaco',
-                    'Montpellier', 'Nantes', 'Nice', 'PSG', 'Reims', 'Rennes', 'Strasbourg', 'Saint-Étienne',
-                    'Toulouse', ],
+        'Ligue1': ['Angers', 'Auxerre', 'Brest', 'Le Havre', 'Lens', 'Lille', 'Lyon', 'Marseille', 'Monaco',
+                   'Montpellier', 'Nantes', 'Nice', 'PSG', 'Reims', 'Rennes', 'Strasbourg', 'Saint-Étienne',
+                   'Toulouse', ],
         'NPL': ['Abia Warriors', 'Akwa United', 'Bayelsa United', 'Bendel Insurance', 'El-Kanemi Warriors', 'Enugu \
                 Rangers', 'Eyimba', 'Heartland', 'Ikorodu City', 'Kano Pillars', 'Katsina United', 'Kwara United',
                 'Lobi Stars', 'Nasarawa United', 'Niger Tornadoes', 'Plateau United', 'Remo Stars', 'Rivers United',
